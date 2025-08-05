@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(163, 163, 247);}
+
+h1 {
+ margin: auto;
+ text-align: center;
+}
+
+.foto {
+ display: block;
+ height: 40vh;
+ border: 2px double white;
+ border-radius: 180px;
+ margin-left: auto;
+ margin-right: auto;
+} 
+
+p {
+    margin: auto;
+    text-align: center;
+}
+
+#enlaces {
+    height: 10vh;
+    background-color: rgb(9, 43, 43);
+    border-radius: 180px;
+    text-align: center;
+}
+
+.rojo {
+    color:red;
+}
+
+.blanco {
+    color: white;
+}
