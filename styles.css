@@ -9,6 +9,14 @@ h1 {
  text-align: center;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .foto {
  display: block;
  height: 40vh;
@@ -26,17 +34,100 @@ p {
 }
 
 #enlaces {
-    font-size: 30px ;
-    height: 10vh;
+    margin-top: auto;
+    background-color: transparent; 
+    padding: 15px 0;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    gap: 20px;       
+}
+
+.link {
+    color: aliceblue;
+    border: 1px double white;
+    font-size: 20px;            
     background-color: rgb(102, 0, 0);
-    border-radius: 180px;
-    text-align: center;
+    border-radius: 50%;         
+    padding: 20px; 
+    text-decoration: none;
+    flex: 0 0 auto;              
+    text-align: center;        
+}         
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px; 
+        margin: 20px auto;
+    }
+
+    .foto {
+        height: 25vh; 
+        border-radius: 50%; 
+    }
+
+    p {
+        font-size: 18px; 
+        margin: 20px; 
+    }
+
+    #enlaces {
+        font-size: 18px;
+        height: auto; 
+        padding: 10px;
+        border-radius: 50px; 
+    }
+
+    #enlaces a {
+        display: inline-block;
+        margin: 0 10px; 
+    }
 }
 
-.rojo {
-    color:red;
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 40px; 
+    }
+
+    .foto {
+        height: 30vh; 
+    }
+
+    p {
+        font-size: 24px; 
+        margin: 20px;    
+    }
+
+
+    #enlaces {
+    margin-top: auto;
+    background-color: transparent; 
+    padding: 15px 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    gap: 20px;  
+    flex-direction: column; 
+    height: auto; 
+    margin: 0 10px;    
 }
 
-.blanco {
-    color: white;
+.link {
+    color: aliceblue;
+    border: 1px double white;
+    font-size: 20px;            
+    background-color: rgb(102, 0, 0);
+    border-radius: 20px;         
+    padding: 20px; 
+    text-decoration: none;
+    flex: 0 0 auto;              
+    text-align: center;        
+}  
+
+    #enlaces a {
+        font-size: 22px;               
+        margin: 5px 0;                 
+    }
 }
